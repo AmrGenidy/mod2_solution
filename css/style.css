@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {  
+    background-color: rgb(48, 47, 47);
+    color: rgb(250, 250, 250);
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 175%;
+    text-align: center;
+}
+.container {
+    text-align: center;
+    padding: 30px;
+}
+#box1 , #box2 , #box3 {
+    background-color: rgb(117, 115, 115);
+    padding: 10px;
+    width: 300px;
+    margin: 10px 5px;
+    display: inline-block;
+    position: relative;
+    padding-top: 30px;
+    border: 1px white solid;
+}
+#box1 > div, #box2 > div , #box3 > div {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 125%;
+    border: 1px white solid;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #box1 {
+        width: 48%;
+    }
+    #box2 {
+        width: 48%;
+    }
+    #box3 {
+        width: 98%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #box1 {
+        width: 100%;
+    }
+    #box2 {
+        width: 100%;
+    }
+    #box3 {
+        width: 100%;
+    }
+}
